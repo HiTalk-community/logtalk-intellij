@@ -1,8 +1,7 @@
 package org.logtalk.intellij.editor;
 
-import org.logtalk.intellij.psi.LogtalkTypes;
-
 import com.intellij.lang.ASTNode;
+import org.logtalk.intellij.psi.LogtalkTypes;
 
 
 public class ASTNodeHelper {

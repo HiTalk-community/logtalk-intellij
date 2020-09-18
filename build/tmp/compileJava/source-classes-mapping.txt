@@ -1,0 +1,180 @@
+org/logtalk/intellij/LogtalkFileType.java
+ org.logtalk.intellij.LogtalkFileType
+org/logtalk/intellij/psi/PrologFile.java
+ org.logtalk.intellij.psi.PrologFile
+org/logtalk/intellij/parser/LogtalkParserUtil.java
+ org.logtalk.intellij.parser.LogtalkParserUtil
+org/logtalk/intellij/psi/impl/LogtalkAtomImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkAtomImpl
+org/logtalk/intellij/LogtalkFileTypeFactory.java
+ org.logtalk.intellij.LogtalkFileTypeFactory
+org/logtalk/intellij/psi/impl/LogtalkBasicTermImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkBasicTermImpl
+org/logtalk/intellij/psi/impl/LogtalkCompoundImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkCompoundImpl
+org/logtalk/parser/operator/OperatorPosition.java
+ org.logtalk.parser.operator.OperatorPosition
+org/logtalk/intellij/psi/impl/LogtalkNumberImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkNumberImpl
+org/logtalk/intellij/editor/formatter/LogtalkBlock.java
+ org.logtalk.intellij.editor.formatter.LogtalkBlock
+org/logtalk/intellij/psi/LogtalkFile.java
+ org.logtalk.intellij.psi.LogtalkFile
+org/logtalk/intellij/psi/LogtalkBasicTerm.java
+ org.logtalk.intellij.psi.LogtalkBasicTerm
+org/logtalk/intellij/psi/decorator/KeywordView.java
+ org.logtalk.intellij.psi.decorator.KeywordView
+org/logtalk/intellij/psi/helper/LogtalkPsiUtil.java
+ org.logtalk.intellij.psi.helper.LogtalkPsiUtil
+org/logtalk/intellij/psi/LogtalkBracedBlock.java
+ org.logtalk.intellij.psi.LogtalkBracedBlock
+org/logtalk/intellij/psi/decorator/SentenceDecorator.java
+ org.logtalk.intellij.psi.decorator.SentenceDecorator
+org/logtalk/intellij/psi/decorator/AtomDecorator.java
+ org.logtalk.intellij.psi.decorator.AtomDecorator
+org/logtalk/intellij/editor/ASTNodeHelper.java
+ org.logtalk.intellij.editor.ASTNodeHelper
+org/logtalk/intellij/editor/LogtalkSyntaxHighlighterFactory.java
+ org.logtalk.intellij.editor.LogtalkSyntaxHighlighterFactory
+org/logtalk/parser/operator/OperatorSet.java
+ org.logtalk.parser.operator.OperatorSet
+org/logtalk/parser/ParserUtil.java
+ org.logtalk.parser.ParserUtil
+org/logtalk/intellij/editor/LogtalkFoldingBuilder.java
+ org.logtalk.intellij.editor.LogtalkFoldingBuilder
+org/logtalk/intellij/psi/LogtalkSentence.java
+ org.logtalk.intellij.psi.LogtalkSentence
+org/logtalk/intellij/psi/impl/LogtalkSentenceImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkSentenceImpl
+org/logtalk/parser/operator/OperatorType.java
+ org.logtalk.parser.operator.OperatorType
+org/logtalk/intellij/ProjectSettings.java
+ org.logtalk.intellij.ProjectSettings
+org/logtalk/intellij/psi/impl/LogtalkBracedBlockImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkBracedBlockImpl
+org/logtalk/intellij/psi/decorator/PsiElementDecorator.java
+ org.logtalk.intellij.psi.decorator.PsiElementDecorator
+org/logtalk/intellij/psi/LogtalkTokenType.java
+ org.logtalk.intellij.psi.LogtalkTokenType
+org/logtalk/intellij/psi/LogtalkAtom.java
+ org.logtalk.intellij.psi.LogtalkAtom
+org/logtalk/intellij/editor/LogtalkSyntaxHighlighter.java
+ org.logtalk.intellij.editor.LogtalkSyntaxHighlighter
+org/logtalk/intellij/psi/decorator/OperationView.java
+ org.logtalk.intellij.psi.decorator.OperationView
+ org.logtalk.intellij.psi.decorator.OperationView$OperationContext
+org/logtalk/intellij/psi/LogtalkTypes.java
+ org.logtalk.intellij.psi.LogtalkTypes
+ org.logtalk.intellij.psi.LogtalkTypes$Factory
+org/logtalk/parser/operator/Operator.java
+ org.logtalk.parser.operator.Operator
+org/logtalk/intellij/psi/impl/LogtalkOperationImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkOperationImpl
+org/logtalk/intellij/psi/decorator/CompoundDecorator.java
+ org.logtalk.intellij.psi.decorator.CompoundDecorator
+org/logtalk/intellij/psi/decorator/OperationDecorator.java
+ org.logtalk.intellij.psi.decorator.OperationDecorator
+ org.logtalk.intellij.psi.decorator.OperationDecorator$1
+ org.logtalk.intellij.psi.decorator.OperationDecorator$OperationPart
+org/logtalk/intellij/psi/LogtalkVariable.java
+ org.logtalk.intellij.psi.LogtalkVariable
+org/logtalk/intellij/LogicParserDefinition.java
+ org.logtalk.intellij.LogicParserDefinition
+org/logtalk/intellij/PrologLanguage.java
+ org.logtalk.intellij.PrologLanguage
+org/logtalk/intellij/psi/LogtalkList.java
+ org.logtalk.intellij.psi.LogtalkList
+org/logtalk/intellij/psi/LogtalkNumber.java
+ org.logtalk.intellij.psi.LogtalkNumber
+org/logtalk/intellij/LogtalkLexer.java
+ org.logtalk.intellij.LogtalkLexer
+org/logtalk/intellij/editor/csettings/LogtalkCodeStyleSettingsProvider.java
+ org.logtalk.intellij.editor.csettings.LogtalkCodeStyleSettingsProvider
+org/logtalk/intellij/psi/decorator/SequenceDecorator.java
+ org.logtalk.intellij.psi.decorator.SequenceDecorator
+ org.logtalk.intellij.psi.decorator.SequenceDecorator$SequenceMembersIterator
+org/logtalk/intellij/psi/impl/LogtalkMapNameImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkMapNameImpl
+org/logtalk/intellij/psi/LogtalkOperation.java
+ org.logtalk.intellij.psi.LogtalkOperation
+org/logtalk/intellij/psi/Constants.java
+ org.logtalk.intellij.psi.Constants
+org/logtalk/intellij/psi/impl/LogtalkListImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkListImpl
+org/logtalk/intellij/editor/usages/LogtalkFindUsagesProvider.java
+ org.logtalk.intellij.editor.usages.LogtalkFindUsagesProvider
+org/logtalk/intellij/LogtalkLanguage.java
+ org.logtalk.intellij.LogtalkLanguage
+org/logtalk/intellij/psi/impl/LogtalkTermImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkTermImpl
+org/logtalk/intellij/psi/LogtalkProperty.java
+ org.logtalk.intellij.psi.LogtalkProperty
+org/logtalk/intellij/editor/formatter/LogtalkFormattingModelBuilder.java
+ org.logtalk.intellij.editor.formatter.LogtalkFormattingModelBuilder
+org/logtalk/intellij/psi/impl/LogtalkCompoundNameImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkCompoundNameImpl
+org/logtalk/intellij/Icons.java
+ org.logtalk.intellij.Icons
+org/logtalk/intellij/psi/impl/LogtalkVariableImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkVariableImpl
+org/logtalk/intellij/psi/LogtalkParenthesizedBlock.java
+ org.logtalk.intellij.psi.LogtalkParenthesizedBlock
+org/logtalk/intellij/psi/decorator/ExtendedPsiView.java
+ org.logtalk.intellij.psi.decorator.ExtendedPsiView
+org/logtalk/intellij/editor/csettings/LogtalkCodeStyleSettings.java
+ org.logtalk.intellij.editor.csettings.LogtalkCodeStyleSettings
+org/logtalk/intellij/psi/decorator/ListDecorator.java
+ org.logtalk.intellij.psi.decorator.ListDecorator
+org/logtalk/parser/operator/OperatorFamily.java
+ org.logtalk.parser.operator.OperatorFamily
+ org.logtalk.parser.operator.OperatorFamily$1
+ org.logtalk.parser.operator.OperatorFamily$Builder
+org/logtalk/intellij/psi/LogtalkVisitor.java
+ org.logtalk.intellij.psi.LogtalkVisitor
+org/logtalk/intellij/psi/LogtalkNamedElement.java
+ org.logtalk.intellij.psi.LogtalkNamedElement
+org/logtalk/intellij/LogtalkLexerAdapter.java
+ org.logtalk.intellij.LogtalkLexerAdapter
+org/logtalk/intellij/psi/impl/LogtalkMapTermImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkMapTermImpl
+org/logtalk/intellij/psi/impl/LogtalkPropertyImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkPropertyImpl
+org/logtalk/intellij/parser/LogtalkParser.java
+ org.logtalk.intellij.parser.LogtalkParser
+ org.logtalk.intellij.parser.LogtalkParser$1
+org/logtalk/intellij/LogtalkParserDefinition.java
+ org.logtalk.intellij.LogtalkParserDefinition
+org/logtalk/intellij/psi/impl/LogtalkNamedElementImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkNamedElementImpl
+org/logtalk/intellij/psi/LogtalkCompoundName.java
+ org.logtalk.intellij.psi.LogtalkCompoundName
+org/logtalk/intellij/psi/helper/SentenceCorrectness.java
+ org.logtalk.intellij.psi.helper.SentenceCorrectness
+org/logtalk/intellij/psi/LogtalkCompound.java
+ org.logtalk.intellij.psi.LogtalkCompound
+org/logtalk/intellij/editor/LogtalkPairedBraceMatcher.java
+ org.logtalk.intellij.editor.LogtalkPairedBraceMatcher
+org/logtalk/intellij/psi/impl/LogtalkParenthesizedBlockImpl.java
+ org.logtalk.intellij.psi.impl.LogtalkParenthesizedBlockImpl
+org/logtalk/parser/operator/PrecedenceType.java
+ org.logtalk.parser.operator.PrecedenceType
+org/logtalk/intellij/PrologParserDefinition.java
+ org.logtalk.intellij.PrologParserDefinition
+org/logtalk/intellij/psi/LogtalkElementType.java
+ org.logtalk.intellij.psi.LogtalkElementType
+org/logtalk/intellij/editor/LogtalkAnnotator.java
+ org.logtalk.intellij.editor.LogtalkAnnotator
+org/logtalk/intellij/psi/LogtalkMapName.java
+ org.logtalk.intellij.psi.LogtalkMapName
+org/logtalk/intellij/psi/decorator/WrongPsiElementException.java
+ org.logtalk.intellij.psi.decorator.WrongPsiElementException
+org/logtalk/intellij/editor/LogtalkCommenter.java
+ org.logtalk.intellij.editor.LogtalkCommenter
+org/logtalk/intellij/psi/decorator/TermDecorator.java
+ org.logtalk.intellij.psi.decorator.TermDecorator
+org/logtalk/intellij/PrologFileType.java
+ org.logtalk.intellij.PrologFileType
+org/logtalk/intellij/psi/LogtalkMapTerm.java
+ org.logtalk.intellij.psi.LogtalkMapTerm
+org/logtalk/intellij/psi/LogtalkTerm.java
+ org.logtalk.intellij.psi.LogtalkTerm

@@ -1,5 +1,6 @@
 {
   parserClass="org.logtalk.intellij.parser.LogtalkParser"
+  parserUtilClass="org.logtalk.intellij.parser.LogtalkParserUtil"
 
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
 
@@ -46,6 +47,16 @@ map_name ::= (UNQUOTED_ATOM | QUOTED_ATOM | variable)
 //map_entry ::= map_key ':' term
 //map_entries ::= map_entry | map_entry COMMA map_entries
 map_term ::= map_name LBRACE term? RBRACE
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY {
+  pin=3
+  recoverWhile="recover_property"
+  mixin="org.logtalk.intellij.psi.impl.LogtalkNamedElementImpl"
+  implements="org.logtalk.intellij.psi.LogtalkNamedElement"
+  methods=[getKey getValue getName setName getNameIdentifier getPresentation]
+}
+
+private recover_property ::= !(KEY|SEPARATOR|COMMENT)
 
 
 operation ::= basic_term term

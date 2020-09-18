@@ -20,7 +20,7 @@ repositories {
 
 
 intellij {
-    pluginName 'Logtalk'
+    pluginName 'Hitalk'
     //IntelliJ dependency; for a full list of IntelliJ IDEA releases see https://www.jetbrains.com/intellij-repository/releases
     version '2019.3'
     //type = 'IC'

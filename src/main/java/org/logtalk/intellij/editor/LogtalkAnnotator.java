@@ -1,10 +1,5 @@
 package org.logtalk.intellij.editor;
 
-import static org.logtalk.intellij.psi.decorator.ExtendedPsiView.sentencePsiView;
-import static org.logtalk.intellij.psi.decorator.SentenceDecorator.isSentence;
-
-import java.util.Optional;
-
 import com.intellij.lang.annotation.Annotation;
 import com.intellij.lang.annotation.AnnotationHolder;
 import com.intellij.lang.annotation.Annotator;
@@ -16,9 +11,15 @@ import com.intellij.openapi.util.TextRange;
 import com.intellij.psi.PsiElement;
 import org.jetbrains.annotations.NotNull;
 import org.logtalk.intellij.psi.decorator.ExtendedPsiView;
-import org.logtalk.intellij.psi.helper.SentenceCorrectness;
+
+import java.util.Optional;
+
+import static org.logtalk.intellij.psi.decorator.ExtendedPsiView.sentencePsiView;
+import static org.logtalk.intellij.psi.decorator.SentenceDecorator.isSentence;
 
 public class LogtalkAnnotator implements Annotator {
+
+    public static final String SEPARATOR = "???";//fixme
 
     @Override
     public void annotate(@NotNull PsiElement element, @NotNull AnnotationHolder holder) {
@@ -44,7 +45,7 @@ public class LogtalkAnnotator implements Annotator {
                 Annotation annotation = holder.createErrorAnnotation(textRange, extendedView.toString());
                 //maybe text attributes are needed here ?
             } else {
-                TextAttributesKey[] keys = highlighter.getTokenHighlights(extendedView);
+                TextAttributesKey[] keys = LogtalkSyntaxHighlighter.getTokenHighlights(extendedView);
                 if (keys.length > 0) {
                     Annotation annotation = holder.createInfoAnnotation(element.getNode(), extendedView.toString());
                     for (TextAttributesKey key : keys) {

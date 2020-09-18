@@ -1,0 +1,44 @@
+<idea-plugin>
+  <version>1.0.15</version>
+  <idea-version since-build="193.5233"/>
+  <id>org.logtalk</id>
+  <name>Logtalk</name>
+  <vendor email="sergioc78@gmail.com" url="https://github.com/java-prolog-connectivity/logtalk-intellij">Sergio
+        Castro
+    </vendor>
+  <description>
+      &lt;em&gt;Logtalk&lt;/em&gt; support for IntelliJ.
+      This plugin provides syntax highlighting for Logtalk and some basic editing features:
+      &lt;ul&gt;
+        &lt;li&gt;Parentheses matching.&lt;/li&gt;
+        &lt;li&gt;Multiline terms and comments folding and unfolding.&lt;/li&gt;
+        &lt;li&gt;Automatic line and block commenting/uncommenting of selection using IntelliJ standard shortcuts.&lt;/li&gt;
+        &lt;li&gt;Tooltips for operators and keywords.&lt;/li&gt;
+      &lt;/ul&gt;
+    </description>
+  <change-notes>
+      Fixed parsing errors concerning hex numbers and empty braced blocks.
+      Upgrading libraries for IntelliJ 2019.3.
+    
+    </change-notes>
+  <depends>com.intellij.modules.lang</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <fileTypeFactory implementation="org.logtalk.intellij.LogtalkFileTypeFactory"/>
+    <lang.parserDefinition language="Logtalk" implementationClass="org.logtalk.intellij.LogtalkParserDefinition"/>
+    <lang.syntaxHighlighterFactory language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkSyntaxHighlighterFactory"/>
+    <annotator language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkAnnotator"/>
+    <lang.braceMatcher language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkPairedBraceMatcher"/>
+    <lang.commenter language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkCommenter"/>
+    <lang.foldingBuilder language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkFoldingBuilder"/>
+    <lang.parserDefinition language="Prolog" implementationClass="org.logtalk.intellij.PrologParserDefinition"/>
+    <lang.syntaxHighlighterFactory language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkSyntaxHighlighterFactory"/>
+    <annotator language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkAnnotator"/>
+    <lang.braceMatcher language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkPairedBraceMatcher"/>
+    <lang.commenter language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkCommenter"/>
+    <lang.foldingBuilder language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkFoldingBuilder"/>
+    <lang.formatter language="Logtalk" implementationClass="org.logtalk.intellij.editor.formatter.LogtalkFormattingModelBuilder"/>
+    <codeStyleSettingsProvider implementation="org.logtalk.intellij.editor.csettings.LogtalkCodeStyleSettingsProvider"/>
+    <lang.findUsagesProvider language="Logtalk" implementationClass="org.logtalk.intellij.editor.usages.LogtalkFindUsagesProvider"/>
+  </extensions>
+  <actions/>
+</idea-plugin>

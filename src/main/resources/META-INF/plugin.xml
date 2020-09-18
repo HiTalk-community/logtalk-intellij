@@ -1,10 +1,12 @@
 <idea-plugin>
-  <id>org.logtalk</id>
-  <name>Logtalk</name>
+    <id>org.logtalk</id>
+    <name>Logtalk</name>
 
-  <vendor email="sergioc78@gmail.com" url="https://github.com/java-prolog-connectivity/logtalk-intellij">Sergio Castro</vendor>
+    <vendor email="sergioc78@gmail.com" url="https://github.com/java-prolog-connectivity/logtalk-intellij">Sergio
+        Castro
+    </vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       <em>Logtalk</em> support for IntelliJ.
       This plugin provides syntax highlighting for Logtalk and some basic editing features:
       <ul>
@@ -16,44 +18,55 @@
     ]]></description>
 
 
-  <change-notes><![CDATA[
+    <change-notes><![CDATA[
       Fixed parsing errors concerning hex numbers and empty braced blocks.
       Upgrading libraries for IntelliJ 2019.3.
     ]]>
-  </change-notes>
+    </change-notes>
 
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <!-- Commented out since it is specified in the Gradle build script-->
-  <!--<idea-version since-build="145.0"/>-->
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <!-- Commented out since it is specified in the Gradle build script-->
+    <!--<idea-version since-build="145.0"/>-->
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  -->
-  <depends>com.intellij.modules.lang</depends>
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    -->
+    <depends>com.intellij.modules.lang</depends>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <fileTypeFactory implementation="org.logtalk.intellij.LogtalkFileTypeFactory"/>
+    <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="org.logtalk.intellij.LogtalkFileTypeFactory"/>
 
-    <lang.parserDefinition language="Logtalk" implementationClass="org.logtalk.intellij.LogtalkParserDefinition"/>
-    <lang.syntaxHighlighterFactory language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkSyntaxHighlighterFactory"/>
-    <annotator language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkAnnotator"/>
-    <lang.braceMatcher language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkPairedBraceMatcher"/>
-    <lang.commenter language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkCommenter"/>
-    <lang.foldingBuilder language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkFoldingBuilder"/>
+        <lang.parserDefinition language="Logtalk" implementationClass="org.logtalk.intellij.LogtalkParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Logtalk"
+                                       implementationClass="org.logtalk.intellij.editor.LogtalkSyntaxHighlighterFactory"/>
+        <annotator language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkAnnotator"/>
+        <lang.braceMatcher language="Logtalk"
+                           implementationClass="org.logtalk.intellij.editor.LogtalkPairedBraceMatcher"/>
+        <lang.commenter language="Logtalk" implementationClass="org.logtalk.intellij.editor.LogtalkCommenter"/>
+        <lang.foldingBuilder language="Logtalk"
+                             implementationClass="org.logtalk.intellij.editor.LogtalkFoldingBuilder"/>
 
-    <!-- At the moment Logtalk and Prolog are defined with the same properties. This will change. -->
-   <lang.parserDefinition language="Prolog" implementationClass="org.logtalk.intellij.PrologParserDefinition"/>
-    <lang.syntaxHighlighterFactory language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkSyntaxHighlighterFactory"/>
-    <annotator language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkAnnotator"/>
-    <lang.braceMatcher language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkPairedBraceMatcher"/>
-    <lang.commenter language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkCommenter"/>
-    <lang.foldingBuilder language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkFoldingBuilder"/>
-  </extensions>
+        <!-- At the moment Logtalk and Prolog are defined with the same properties. This will change. -->
+        <lang.parserDefinition language="Prolog" implementationClass="org.logtalk.intellij.PrologParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="Prolog"
+                                       implementationClass="org.logtalk.intellij.editor.LogtalkSyntaxHighlighterFactory"/>
+        <annotator language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkAnnotator"/>
+        <lang.braceMatcher language="Prolog"
+                           implementationClass="org.logtalk.intellij.editor.LogtalkPairedBraceMatcher"/>
+        <lang.commenter language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkCommenter"/>
+        <lang.foldingBuilder language="Prolog" implementationClass="org.logtalk.intellij.editor.LogtalkFoldingBuilder"/>
+        <lang.formatter language="Logtalk"
+                        implementationClass="org.logtalk.intellij.editor.formatter.LogtalkFormattingModelBuilder"/>
+        <codeStyleSettingsProvider
+                implementation="org.logtalk.intellij.editor.csettings.LogtalkCodeStyleSettingsProvider"/>
+        <lang.findUsagesProvider language="Logtalk"
+                                 implementationClass="org.logtalk.intellij.editor.usages.LogtalkFindUsagesProvider"/>
+    </extensions>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
 
 </idea-plugin>
